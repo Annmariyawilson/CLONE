@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./clone.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"></head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="./carimg/Screenshot 2024-06-23 210500.png" alt="Image" style="max-height: 45px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vehicles
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown1">
+                        <div class="d-flex flex-row">
+                            <a class="dropdown-item text-center" href="#">
+                                <img src="./carimg/11.avif" style="max-width: 120px; max-height: 100px;"
+                                    alt="Car Image"><br>
+                                <b style="margin-bottom: 10px; font-size: 12px;">2025 Toyota Crown</b>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center" href="#">
+                                <img src="./carimg/12.avif" style="max-width: 120px; max-height: 100px;"
+                                    alt="Car Image"><br>
+                                <b style="margin-bottom: 10px; font-size: 12px;">2024 Prius Prime</b>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center" href="#">
+                                <img src="./carimg/13.avif" style="max-width: 120px; max-height: 100px;"
+                                    alt="Car Image"><br>
+                                <b style="margin-bottom: 10px; font-size: 12px;">2024 GR Corolla</b>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <a class="dropdown-item text-center" href="#">
+                                <img src="./carimg/14.avif" style="max-width: 120px; max-height: 100px;"
+                                    alt="Car Image"><br>
+                                <b style="margin-bottom: 10px; font-size: 12px;">2024 GR86</b>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center" href="#">
+                                <img src="./carimg/15.avif" style="max-width: 120px; max-height: 100px;"
+                                    alt="Car Image"><br>
+                                <b style="margin-bottom: 10px; font-size: 12px;">2024 Mirai</b>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center" href="#">
+                                <img src="./carimg/16.avif" style="max-width: 120px; max-height: 100px;"
+                                    alt="Car Image"><br>
+                                <b style="margin-bottom: 10px; font-size: 12px;">2024 Camry Hybrid</b>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shopping Tools
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#"><b>Build & Price</b></a>
+                        <a class="dropdown-item" href="#"><b>Toyota Certified</b></a>
+                        <a class="dropdown-item" href="#"><b>Search Inventory</b></a>
+                        <a class="dropdown-item" href="#"><b>Accessories</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Owners
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown3">
+                        <div class="scrollspy-container">
+                            <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="#list-item-1">
+                                    <i class="fas fa-user-cog"></i> Owners Resources
+                                </a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">
+                                    <i class="fas fa-tools"></i> Service & Parts
+                                </a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">
+                                    <i class="fas fa-star"></i> Features
+                                </a>
+                            </div>
+                            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example"
+                                tabindex="0">
+                                <h5 id="list-item-1">Owners Resources</h5>
+                                <a href="" target="_blank" rel="noopener noreferrer">Owners Home</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Manuals & Warranties</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Service History</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Connected Services</a>
+                                <h5 id="list-item-2">Service & Parts</h5>
+                                <a href="" target="_blank" rel="noopener noreferrer">Service Specials</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Maintenance Schedule</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Certified Collision Centers</a><br>
+                                <h5 id="list-item-3">Features</h5>
+                                <a href="" target="_blank" rel="noopener noreferrer">Vehicle Videos</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Safety Hub</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Clean Assist</a><br>
+                                <a href="" target="_blank" rel="noopener noreferrer">Kick Sensor</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #00040a;"href="#">Search
+                        Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user-circle fa-2x" style="color: #00040a;"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ <div id="contentCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./carimg/CRS_MY25_0012_V001.webp" class="d-block w-100" alt="First Slide">
+                <div class="carousel-caption">
+                    <h1 class="uv">2025 Toyota Crown Signia</h1>
+                    <p>Elevated comfort for refined adventure.</p>
+                    <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./carimg/2.avif" class="d-block w-100" alt="Second Slide">
+                <div class="carousel-caption">
+                    <h1>2025 Corolla FX</h1>
+                    <p>Let the good times rule.</p>
+                    <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./carimg/3.jpg" class="d-block w-100" alt="Third Slide">
+                <div class="carousel-caption">
+                    <h1>2025 Camry</h1>
+                    <p> The thrill of the road, perfected.</p>
+                    <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./carimg/4.avif" class="d-block w-100" alt="Third Slide">
+                <div class="carousel-caption">
+                    <h1>2025 4Runner</h1>
+                    <p>Forever Untamed.</p>
+                    <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#contentCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#contentCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container-1">
+        <h1 class="t1 text-center">Explore All Vehicles</h1>
+        <ul class="nav nav-tabs justify-content-center mt-3">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cars & Minivan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trucks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Crossovers & SUVs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Electrified</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Upcoming Vehicles</a>
+            </li>
+        </ul>
+        <div class="container-2">
+            <div class="row justify-content-lg-between no-gutters">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-5">
+                                <img src="./carimg/s1.png" class="card-img object-fit-cover border rounded"
+                                    alt="car models">
+                            </div>
+                            <div class="col-6 col-md-7">
+                                <div class="card-body">
+                                    <div class="h-100">
+                                        <h4>2025 | Hybrid</h4>
+                                        <h3>Toyota Crown Signia</h3>
+                                        <p>Experience the height of sophistication.</p>
+                                        <div class="cc5">
+                                            <div class="item1">
+                                                $43,590 <span class="subtext">Starting MSRP*</span>
+                                            </div>
+                                            <div class="item2">
+                                                39/37 <span class="subtext">Up to Est.MPG*</span>
+                                            </div>
+                                        </div><br>
+                                        <button class="button-1"><span>Explore</span></button>
+                                        <button class="button-2"><span>Build</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-5">
+                                <img src="./carimg/s2.png" class="card-img object-fit-cover border rounded"
+                                    alt="car models">
+                            </div>
+                            <div class="col-6 col-md-7">
+                                <div class="card-body" style="background-color: rgb(114, 63, 44);">
+                                    <div class="h-100">
+                                        <h4>2024 | Hybrid Available</h4>
+                                        <h3>Highlander</h3>
+                                        <p>Go above and beyond <br>the ordinary.</p>
+                                        <div class="cc5">
+                                            <div class="item1">
+                                                $39,270 <span class="subtext">Starting MSRP*</span>
+                                            </div>
+                                            <div class="item2">
+                                                22/29 <span class="subtext">Up to Est.MPGe*</span>
+                                            </div>
+                                        </div><br>
+                                        <button class="button-1"><span>Explore</span></button>
+                                        <button class="button-2"><span>Build</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-6 col-md-5">
+                                <img src="./carimg/s3.png" class="card-img object-fit-cover border rounded"
+                                    alt="car models">
+                            </div>
+                            <div class="col-6 col-md-7">
+                                <div class="card-body" style="background-color: rgb(42, 42, 42);">
+                                    <div class="h-100">
+                                        <h4>2024 | All-Electric</h4>
+                                        <h3>bZ4X</h3>
+                                        <p>Electrifying, <br>inside and out.</p>
+                                        <div class="cc5">
+                                            <div class="item1">
+                                                $43,070 <span class="subtext">Starting MSRP *</span>
+                                            </div>
+                                            <div class="item2">
+                                                252miles <span class="subtext">Up to Est. MPG *</span>
+                                            </div>
+                                        </div><br>
+                                        <button class="button-1"><span>Explore</span></button>
+                                        <button class="button-2"><span>Build</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="butn">
+                <button class="btn1" style="border-radius: 50px;">Explore All Vehicles</button>
+                <button class="btn2" style="border-radius: 50px;">Search Inventory</button>
+            </div>
+        </div>
+        <div class="container-3 shopping-tools">
+            <h2 class="hh">Shopping Tools</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="shopping-tool">
+                        <i class="fas fa-tools"></i>
+                        <p>Build & Price</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="shopping-tool">
+                        <i class="fas fa-search"></i>
+                        <p>Search Inventory</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="shopping-tool">
+                        <i class="fas fa-tags"></i>
+                        <p>Local Specials</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="shopping-tool">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Find A Dealer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-image1">
+            <div class="content-6">
+                <h3>Drive change your way.</h3>
+                <button class="button-1"><span><b>Explore Beyond Zero</b></span></button>
+            </div>
+        </div>
+        <body class="body-new">
+            <div class="carousel-container">
+                <h3 class="carousel-heading">TOYOTA RACING IS TURNING UP THE HEAT</h3>
+                <h1 class="heading"> Can you handle it?</h1>
+                <button class="join-button">Join Us</button>
+                <div class="mycarousel-new">
+                    <div class="carousel-inner-new c1-new">
+                        <div class="carousel-item-new c2-new active">
+                            <video src="./carimg/video.1.mp4" controls autoplay></video>
+                        </div>
+                        <div class="carousel-item-new c2-new">
+                            <img src="./carimg/m12.avif" alt="Slide Image" class="carousel-image">
+                        </div>
+                        <div class="carousel-item-new c2-new">
+                            <video src="./carimg/video.2.mp4" controls autoplay></video>
+                        </div>
+                    </div>
+                    <button class="carousel-control-new prev-new x1-new">&#10094;</button>
+                    <button class="carousel-control-new next-new x2-new">&#10095;</button>
+                </div>
+            </div>
+        </body>
+                <div class="container mt-5">
+            <div class="text-center">
+                <h1>Discover Toyota</h1>
+            </div>
+            <ul class="nav nav-tabs1">
+                <li class="nav-item">
+                    <a class="nav-link1 active" href="#">Featured Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link1" href="#">Vehicles & Technology </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link1" href="#">Offers & Services </a>
+                </li>
+            </ul>
+            <div class="container-3">
+                <div class="row mt-4 no-gutters">
+                    <div class="col-md-6">
+                        <img src="./carimg/Screenshot 2024-06-28 203154.png" class="img-fluid rounded-left"
+                            alt="Community Strength">
+                    </div>
+                    <div class="col-md-6 bg-dark text-white p-4 rounded-right">
+                        <h2>Strength Through Community</h2>
+                        <p>When you have the support of your community behind you, the road ahead is limitless.</p>
+                        <button class="btn btn-light custom-btn-width">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="./carimg/card1.jpg">
+                            <div class="overlay">
+                                <h4>FEATURED STORIES</h4>
+                                <h3><b>Toyota Racing</b></h3>
+                                <p>It's summer, meaning Toyota Racing is turning up the heat.</p>
+                                <a href="#"><b>Join us</b></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./carimg/n2.jpg">
+                            <div class="overlay">
+                                <h4>FEATURED STORIES</h4>
+                                <h3>An Easier Way to Buy Your Next Toyota</h3>
+                                <p>SmartPath helps you find your Toyota, customize terms and finalize your purchase—all online.</p>
+                                <a href="#"><b>Learn More</b></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./carimg/card3.jpg">
+                            <div class="overlay">
+                                <h4>FEATURED STORIES</h4>
+                                <h3>Toyota Cares</h3>
+                                <p>Every Toyota comes with a peace-of-mind two years of no cost maintenance and Roadside Assistance. *</p>
+                                <a href="#"><b>See Details</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    <div class="me-5 d-none d-lg-block">
+                        <a href="#" style="color: #00040a;">Accessibility</a>&nbsp;&nbsp;&nbsp;
+                        <a href="#" style="color: #00040a;">YOUR PRIVACY CHOICES</a>&nbsp;&nbsp;&nbsp;
+                        <a href="#" style="color: #00040a;">Cookie Consent Options</a>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-danger">Manage Preference</button>
+                        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-twitter"></i></a>
+                        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-google"></i></a>
+                        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+                        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </section>
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <div class="row mt-3">
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4" style="color: #00040a;">
+                                    SHOPPING TOOLS
+                                </h6><p> <a href="#!" class="text-reset">Trade-In Value</a></p>
+                                <p><a href="#!" class="text-reset">Build Your Toyota</a></p>
+                                <p><a href="#!" class="text-reset">Search Inventory</a></p>
+                                <p><a href="#!" class="text-reset">Find a Dealer</a></p>
+                                <p><a href="#!" class="text-reset">Shop Online With SmartPath</a> </p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4" style="color: #00040a;">
+                                    VEHICLES
+                                </h6>
+                                <p><a href="#!" class="text-reset">All Toyota Vehicles</a> </p>
+                                <p><a href="#!" class="text-reset">SUVs</a></p></p>
+                                <p><a href="#!" class="text-reset">Trucks</a></p>
+                                <p><a href="#!" class="text-reset">Electrified Vehicles</a></p>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4" style="color: #00040a;">
+                                    HELPFUL LINKS
+                                </h6>
+                                <p><a href="#!" class="text-reset">Dealers</a></p>
+                                <p><a href="#!" class="text-reset">Deals and Incentives</a></p>
+                                <p><a href="#!" class="text-reset">Mobile Phone Compatibility</a></p>
+                                <p><a href="#!" class="text-reset">Toyota Financial Services</a></p>
+                                <p><a href="#!" class="text-reset">Toyota Insurance</a></p>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4" style="color: #00040a;">
+                                    OWNERS
+                                </h6>
+                                <p><a href="#!" class="text-reset">Owners Home</a></p>
+                                <p><a href="#!" class="text-reset">Safety Hub</a></p>
+                                <p><a href="#!" class="text-reset">Safety Hub</a></p>
+                                <p><a href="#!" class="text-reset">Manuals & Warranties</a></p>
+                                <p><a href="#!" class="text-reset">Warning Lights</a></p>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4" style="color: #00040a;">
+                                    ABOUT TOYOTA
+                                </h6>
+                                <p><a href="#!" class="text-reset">Careers </a></p>
+                                <p><a href="#!" class="text-reset"> About Us</a></p>
+                                <p> <a href="#!" class="text-reset"> Our Company</a></p>
+                                <p><a href="#!" class="text-reset"> Toyota Outfitters</a></p>
+                                <p><a href="#!" class="text-reset">Newsroom</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+            <div class="footer">
+                <div class="logo">
+                    <img src="./carimg/Screenshot 2024-06-23 210500.png" alt="US Paralympic Logo" style="max-height: 45px;" >
+                </div>
+                <p class="footer-text">Proud Partner of Team USA</p>
+                <div class="footer-links">
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Español</a>
+                </div>
+                <p class="footer-text">&copy; 2024 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.<br>
+                The use of Olympic Marks, Terminology and Imagery is authorized by the U.S. Olympic & Paralympic Committee pursuant to Title 36 U.S. Code Section 220506.</p>
+                <div class="footer-bottom-links mb-5">
+                    <a href="#">Privacy Notice</a> | 
+                    <a href="#">Legal Terms</a> | 
+                    <a href="#">Site Map</a>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('body').scrollspy({ target: '.scrollspy-example', offset: 0 });
+                });
+            </script>
+            <script>
+                function updateCaptionText() {
+                    var h1 = document.querySelector('.carousel-caption .uv');
+                    if (window.innerWidth <= 768) {
+                        h1.textContent = " 2025 Crown Signia";
+                    } else {
+                        h1.textContent = "2025 Toyota Crown Signia";
+                    }
+                }
+                window.addEventListener('resize', updateCaptionText);
+                updateCaptionText();
+
+   
+                document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.querySelector('.prev-new');
+    const nextButton = document.querySelector('.next-new');
+    const items = document.querySelectorAll('.carousel-item-new');
+    let currentIndex = 0;
+    const intervalTime = 5000; 
+
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.classList.toggle('active', i === index);
+            const video = item.querySelector('video');
+            if (video) {
+                if (i === index) {
+                    video.play();
+                } else {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            }
+        });
+    }
+
+    function nextItem() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showItem(currentIndex);
+    }
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+        showItem(currentIndex);
+    });
+
+    nextButton.addEventListener('click', function() {
+        nextItem();
+    });
+
+    setInterval(nextItem, intervalTime);
+    showItem(currentIndex);
+});
+
+
+            </script>
+            
+
+</body>
+
+</html>
